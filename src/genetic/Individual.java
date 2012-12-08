@@ -1,4 +1,10 @@
 package genetic;
+
+/**
+ * 
+ * @author Salim
+ *
+ */
 public class Individual {
 	private int[] sequence;
 	private double value;
