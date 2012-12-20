@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-
-
 /**
  * 
  * @author Salim
@@ -29,6 +27,9 @@ public class Genetic {
 
 	/* Goal 1 */Individual goal = new Individual(new int[] { 1, 1, 1, 0, 1, 0,
 			1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1 });// length:20
+	// /* Goal 2 */Individual goal = new Individual(new int[] { 1, 1, 1, 0, 1, 0,
+	// 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1,1,1,1,1,1,0,1,0,1,1,0,0,0,0,1,0,1,0 });// length:40
+	//
 	ArrayList<Individual> population = new ArrayList<Individual>();
 
 	public Genetic() {
