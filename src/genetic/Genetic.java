@@ -100,16 +100,17 @@ public class Genetic {
 	 * Implementation of mutation algorihtm
 	 */
 	private void mutate() {
-		float portion = 0;
 		double probability = (double) 1 / individualLength();
 		int[] tmp = new int[individualLength()];
 		for (int i = 0; i < POPULATION_SIZE; i++) {
 			for (int j = 0; j < individualLength(); j++) {
-				if (portion > MAX_MUTATATION_PORTION)
+				float count = 0;
+				if (count / individualLength() > MAX_MUTATATION_PORTION)
 					break;
 				double rand = Math.random();
 				if (rand < probability) {// mutate => flip bit
 					tmp[j] = 1 - population.get(i).getSequence()[j];
+					count++;
 				} else {
 					tmp[j] = population.get(i).getSequence()[j];
 				}
